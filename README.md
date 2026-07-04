@@ -1,4 +1,6 @@
-# Practical Guide to Agents — Hands-on Projects
+# Agent Patterns in Practice
+
+**Repo:** [github.com/muhammedehab35/agent-patterns-in-practice](https://github.com/muhammedehab35/agent-patterns-in-practice)
 
 This repo is based on OpenAI's **["A Practical Guide to Building Agents"](https://openai.com)** guide, but it doesn't just reproduce its code snippets. Each pattern from the book is the foundation for a **real, small application**, with a concrete objective, a real integration (free API, local database) and advanced features: conversation memory, persistence, self-correction, layered guardrails, analytics. On top of that, every project has a **second, richer task** grafted onto the same architecture, to push past "hello world" agent demos.
 
@@ -13,8 +15,8 @@ Goal of this repo: understand agent patterns by building tools you'd actually us
 ## Installation
 
 ```bash
-git clone <your-repo-url>
-cd practical-guide-to-agents
+git clone https://github.com/muhammedehab35/agent-patterns-in-practice.git
+cd agent-patterns-in-practice
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -40,7 +42,7 @@ Follow the order 01 → 05: complexity (number of agents, layers of protection, 
 ## Project structure
 
 ```
-practical-guide-to-agents/
+agent-patterns-in-practice/
 ├── README.md                 # you are here
 ├── requirements.txt
 ├── .env.example
@@ -70,6 +72,10 @@ Databases (`*.db`) and generated reports (`reports/`) are created automatically 
 - `sqlite3` (stdlib) — local persistence for projects 02, 04 and 05, no server install needed
 - `requests` — calls to the free public [Open-Meteo](https://open-meteo.com/) weather API (no key required)
 - `pydantic` — structured outputs (guardrails, reviewer, weather reports)
+
+## Contributing
+
+Ideas for new patterns, extra tasks, or fixes are welcome — open an issue or a pull request on [the repo](https://github.com/muhammedehab35/agent-patterns-in-practice). Each project's "Go further" section in its README is a good starting point if you're looking for something to build.
 
 ## License
 
