@@ -1,7 +1,4 @@
 # Agent Patterns in Practice
-
-**Repo:** [github.com/muhammedehab35/agent-patterns-in-practice](https://github.com/muhammedehab35/agent-patterns-in-practice)
-
 This repo is based on OpenAI's **["A Practical Guide to Building Agents"](https://openai.com)** guide, but it doesn't just reproduce its code snippets. Each pattern from the book is the foundation for a **real, small application**, with a concrete objective, a real integration (free API, local database) and advanced features: conversation memory, persistence, self-correction, layered guardrails, analytics. On top of that, every project has a **second, richer task** grafted onto the same architecture, to push past "hello world" agent demos.
 
 Goal of this repo: understand agent patterns by building tools you'd actually use, not throwaway demos.
